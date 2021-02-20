@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: minmax(150px, auto);
+    grid-gap: 20px;
+}
+.grid-item {
+    background-color: blue;
+    color: black;
+    padding: 5px;
+    margin: 3px;
+}
+
+.grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item-2 {
+    grid-row: 2/4;
+}
+.grid-item-3 {
+    grid-row: span 3;
+}
